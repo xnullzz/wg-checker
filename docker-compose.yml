@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  wg-checker:
+    image: wg-checker:latest
+    command: sh -c "/root/shell/checker.sh"
+    volumes:
+      - ./wireguard:/etc/wireguard:ro
+      - ./shell/:/root/shell/
+    network_mode: bridge
+    privileged: true
