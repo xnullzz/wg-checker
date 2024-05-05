@@ -36,10 +36,6 @@ WireGuard is a modern VPN (Virtual Private Network) technology known for its sim
 **Please notice!** This test is used only for client configuration files, it is not used for checking syntax. 
 The main workflow of the script is pretty simple: Putting configuration file into internal /etc/wireguard directory -> Trying to run the wg-quick up *.conf -> Checking if Endpoint IP and ifconfig.me IP are same   
 
-## How It Works
-
-WireGuard Configuration Checker sets up a simple Docker container with WireGuard installed. It then attempts to establish a connection using the provided WireGuard configuration file. Upon completion, it provides feedback regarding the success or failure of the connection attempt.
-
 ## Why docker?
 
 Docker containerization provides a fast and easy way to isolate the wireguard from the host machine network, which gives a good way to check configuration availability without disturbing the current network setup.
