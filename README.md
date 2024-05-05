@@ -29,10 +29,8 @@ WireGuard is a modern VPN (Virtual Private Network) technology known for its sim
     docker build -t wg-checker .
     ```
 ## Usage
-
-    ```bash
     docker compose run --rm wg-checker
-    ```
+
 **Please notice!** This test is used only for client configuration files, it is not used for checking syntax. 
 The main workflow of the script is pretty simple: Putting configuration file into internal /etc/wireguard directory -> Trying to run the wg-quick up *.conf -> Checking if Endpoint IP and ifconfig.me IP are same   
 
