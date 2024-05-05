@@ -14,7 +14,7 @@ WireGuard is a modern VPN (Virtual Private Network) technology known for its sim
 - **Docker Compose**: Utilizes Docker Compose for creating isolated test environments.
 - **Fast Feedback**: Receive immediate feedback on the status of your WireGuard configuration.
 
-## Usage
+## Deployment
 1. **Clone the repo**
     ```bash
     git clone https://github.com/xnullzz/wg-checker.git && cd ./wg-checker
@@ -28,8 +28,7 @@ WireGuard is a modern VPN (Virtual Private Network) technology known for its sim
     ```bash
     docker build -t wg-checker .
     ```
-
-4. **Run Test**:
+## Usage
     ```bash
     docker compose run --rm wg-checker
     ```
