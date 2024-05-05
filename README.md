@@ -17,7 +17,7 @@ WireGuard is a modern VPN (Virtual Private Network) technology known for its sim
 ## Usage
 1. **Clone the repo**
     ```bash
-    git clone https://github.com/xnullzz/wg-checker.git
+    git clone https://github.com/xnullzz/wg-checker.git && cd ./wg-checker
     ```
 
 2. **Build Docker Image**:
