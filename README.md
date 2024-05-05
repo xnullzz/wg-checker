@@ -15,20 +15,28 @@ WireGuard is a modern VPN (Virtual Private Network) technology known for its sim
 - **Fast Feedback**: Receive immediate feedback on the status of your WireGuard configuration.
 
 ## Usage
+1. **Clone the repo**
+    ```bash
+    git clone https://github.com/xnullzz/wg-checker.git
+    ```
 
-1. **Build Docker Image**:
+2. **Build Docker Image**:
     ```bash
     docker build -t wg-checker .
     ```
 
-2. **Run Test**:
+3. **Run Test**:
     ```bash
-    docker compose run --rm --quiet wg-checker
+    docker compose run --rm wg-checker
     ```
 
 ## How It Works
 
 WireGuard Configuration Checker sets up a simple Docker container with WireGuard installed. It then attempts to establish a connection using the provided WireGuard configuration file. Upon completion, it provides feedback regarding the success or failure of the connection attempt.
+
+## Why docker?
+
+Docker containerization provides a fast and easy way to isolate the wireguard from the host machine network, which gives a good way to check configuration availability without disturbing the current network setup.
 
 ## Requirements
 
