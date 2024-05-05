@@ -19,7 +19,7 @@ WireGuard is a modern VPN (Virtual Private Network) technology known for its sim
     ```bash
     git clone https://github.com/xnullzz/wg-checker.git && cd ./wg-checker
     ```
-2. ** Put configuration file under wireguard directory**
+2. **Put configuration file under wireguard directory**
     ```bash
     cp /path/to/your/config ./wireguard
     ```
@@ -29,6 +29,7 @@ WireGuard is a modern VPN (Virtual Private Network) technology known for its sim
     docker build -t wg-checker .
     ```
 ## Usage
+
     ```bash
     docker compose run --rm wg-checker
     ```
